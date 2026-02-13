@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vintage Valentine</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="stage">
+
+    <!-- STEP 0: Envelope -->
+    <section class="step step--active" id="step-envelope" aria-label="Envelope">
+      <div class="envelope-wrap">
+        <div class="envelope" id="envelope">
+          <div class="env-back"></div>
+
+          <div class="env-letter">
+            <div class="mini-card">
+              <div class="mini-title">A letter for you</div>
+              <div class="mini-sub">Tap the heart seal</div>
+            </div>
+          </div>
+
+          <div class="env-left"></div>
+          <div class="env-right"></div>
+          <div class="env-bottom"></div>
+          <div class="env-flap"></div>
+
+          <button class="seal" id="sealBtn" aria-label="Open">
+            <span class="seal-heart">&hearts;</span>
+          </button>
+        </div>
+
+        <div class="hint">Click the heart</div>
+      </div>
+    </section>
+
+    <!-- STEP 1: Music -->
+    <section class="step" id="step-music" aria-label="Music">
+      <div class="card lace">
+        <h2 class="card-title">READY FOR THE MUSIC?</h2>
+        <h1 class="card-script small">Set the mood first</h1>
+
+        <div class="btn-row">
+          <button class="btn btn-yes" id="musicOnBtn">Turn On Music</button>
+          <button class="btn btn-no" id="musicSkipBtn">Skip</button>
+        </div>
+
+        <div class="card-footer">
+          <span class="tiny">Tap to continue to the question</span>
+        </div>
+
+        <div class="nav-row">
+          <button class="btn btn-next btn-back" data-back="step-envelope">&larr; Back</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 2 -->
+    <section class="step" id="step-question" aria-label="Question">
+      <div class="card lace">
+        <div class="ribbon"></div>
+        <h2 class="card-title">MAHAL, WILL YOU BE</h2>
+        <h1 class="card-script">My Valentine?</h1>
+
+        <div class="btn-row">
+          <button class="btn btn-yes" id="yesBtn">YES</button>
+          <button class="btn btn-no" id="noBtn">NO</button>
+        </div>
+
+        <div class="card-footer">
+          <span class="tiny">Tap YES to continue</span>
+        </div>
+
+        <div class="nav-row">
+          <button class="btn btn-next btn-back" data-back="step-music">&larr; Back</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 3 -->
+    <section class="step" id="step-yes" aria-label="Yes response">
+      <div class="card lace">
+        <h2 class="card-title">YOU JUST MADE MY HEART</h2>
+        <h1 class="card-script small">so happy</h1>
+
+        <div class="cute-row">
+          <div class="cute-note">I love you!</div>
+        </div>
+
+        <div class="nav-row">
+          <button class="btn btn-next btn-back" data-back="step-question">&larr; Back</button>
+          <button class="btn btn-next" data-next="step-moment">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 4: Moments (2023 is VIDEO) -->
+    <section class="step" id="step-moment" aria-label="Moments">
+      <div class="moments-container">
+        <h3 class="moments-title">MY POV EVERY YEAR WITH YOU</h3>
+        <h1 class="moments-years">2022 - 2025</h1>
+
+        <div class="moments-box">
+          <button class="nav-btn left" id="prevMoment" aria-label="Previous">&lsaquo;</button>
+
+          <div class="moment-card">
+            <div class="moment-year" id="momentYear">2022</div>
+
+            <div class="moment-image-box">
+              <img id="momentImg" alt="Moment Image">
+              <video id="momentVideo" muted loop playsinline></video>
+            </div>
+
+            <p class="moment-caption" id="momentCaption"></p>
+            <div class="moment-dots" id="momentDots"></div>
+          </div>
+
+          <button class="nav-btn right" id="nextMoment" aria-label="Next">&rsaquo;</button>
+        </div>
+
+        <div class="nav-row">
+          <button class="btn btn-next btn-back" data-back="step-yes">&larr; Back</button>
+          <button class="btn btn-next" data-next="step-letter">Next &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 5: Letter -->
+    <section class="step" id="step-letter" aria-label="Letter">
+      <div class="card lace message-card">
+        <h2 class="card-title">MY MAHAL,</h2>
+        <div class="message-scroll">
+          <p class="message">
+            I may not be able to write you a handwritten letter, but this is my love language to make a website for you.
+            This is my way of showing how much you mean to me. First of all, I am always thankful to have you in my life.
+            I never expected to have someone like you, yet here you are, someone who changed my life in the most beautiful way.
+            You are the prettiest, cutest, and strongest woman I know, and I am endlessly grateful for your presence.
+          </p>
+
+          <p class="message">
+            Even when we don't always have time because of our long-distance relationship, you always find a way to come home to me and spend time with me.
+            In those moments, distance feels smaller, and my heart feels fuller. Because of you, I always feel like I am the luckiest man on earth.
+          </p>
+
+          <p class="message">
+            This is our fifth Valentine's Day together, and it means so much to me. Five years of choosing each other, loving each other,
+            and growing together, even through distance, challenges, and changes in our lives. Every Valentine's with you reminds me that love isn't just about being together physically,
+            but about choosing each other every single day.
+          </p>
+
+          <p class="message">
+            I know there are so many challenges you are facing right now in this stage of adulting, but I truly believe that a woman like you will always overcome them.
+            You are stronger than you think, and I hope you never forget that. And you know that I am always here for you, in every moment of your life, in every moment.
+          </p>
+
+          <p class="message">
+            Always chase your dreams, mahal. Focus on your goals, and never be afraid to become the woman you are meant to be.
+            We still have so many memories to create and so many moments waiting for us. I know that the future we will have is us, always together.
+            I love you so much, for every tomorrow I have.
+          </p>
+
+          <p class="message sign">movie date later my mahal?</p>
+          <p class="message sign">- Yours, always.</p>
+        </div>
+
+        <div class="nav-row">
+          <button class="btn btn-next btn-back" data-back="step-moment">&larr; Back</button>
+          <button class="btn btn-next" data-next="step-final">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 6 -->
+    <section class="step" id="step-final" aria-label="Final">
+      <div class="card lace">
+        <h2 class="card-title">I'VE BEEN WANTING TO TELL YOU...</h2>
+        <h1 class="card-script">I love you.</h1>
+
+        <div class="nav-row">
+          <button class="btn btn-next btn-back" data-back="step-letter">&larr; Back</button>
+          <button class="btn btn-next" id="restartBtn">Restart</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
